@@ -12,12 +12,12 @@ public class Repeat {
 	int n=s.nextInt();
 	s.close();
 	System.out.print(str);
-	char c[]=str.toCharArray();
+	//char c[]=str.toCharArray();
 	for(int i=0;i<n;i++)
 	{
-		for(int j=n;j<c.length;j++)
+		for(int j=str.length()-n;j<str.length();j++)
 		{
-		System.out.print(c[j]);
+		System.out.print(str.charAt(j));
 	}
 }
 }
